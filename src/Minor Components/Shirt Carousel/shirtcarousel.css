@@ -1,0 +1,28 @@
+#carousel{
+    margin-top: 3rem;
+}
+  
+.imgslider img{
+    background: var(--color-light);
+    padding: 30px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+   
+}
+
+.imgslider{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.imgslider a{
+    color: var(--color-primary);
+}
+
+.tag h2{
+    color: var(--color-primary);
+}
+

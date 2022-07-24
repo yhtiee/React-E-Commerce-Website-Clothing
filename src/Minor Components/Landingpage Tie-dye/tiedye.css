@@ -1,0 +1,64 @@
+section#tiedye{
+    margin-top: 8rem;
+}
+
+.tiedye__container-inner{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   place-items: center;
+   
+}
+
+.tiedye__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tiedye__container h2{
+    color: var(--color-primary);
+}
+
+.tiedye__image{
+  width: 100%;
+  height: 500px; 
+ 
+  
+}
+.tiedye__image img{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: -22rem;
+    object-fit: contain;
+}
+
+.tiedye__products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+
+.tiedye__products a{
+    color: var(--color-primary);
+    /* cursor: pointer; */
+}
+#button2{
+    position: absolute;
+    left: 10rem;
+    bottom: -14rem;
+}
+
+.tiedye__product{
+    border: 1px solid black;
+   
+    
+}
+
+.tiedye__products img{
+    background: var(--color-light);
+    padding: 30px;
+    height: 175px;
+    object-fit: cover;
+}
