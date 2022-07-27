@@ -1,28 +1,33 @@
 #carousel{
     margin-top: 3rem;
 }
-  
-.imgslider img{
-    background: var(--color-light);
-    padding: 30px;
-    height: 250px;
-    object-fit: cover;
-    display: flex;
-    gap: 2rem;
-    justify-content: space-between;
-   
-}
-
-.imgslider{
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.imgslider a{
-    color: var(--color-primary);
-}
-
 .tag h2{
     color: var(--color-primary);
 }
 
+/* .carousel__container{
+    background: red;
+} */
+
+.slick-slide button {
+    padding: 30px;
+    background: none;
+}
+
+.slick-slide span{
+    color: var(--color-primary);
+    font-size: large;
+}
+
+.slick-slide p{
+    text-align: start;
+    margin-top: 1rem;
+}
+
+.slick-slide img{
+    background: var(--color-light);
+    height: 250px;
+    width: 15rem;
+    padding: 10px;
+   
+}

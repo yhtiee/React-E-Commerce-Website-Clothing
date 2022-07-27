@@ -1,0 +1,53 @@
+#popular-combos{
+    margin-top: 3rem;
+}
+
+.popularcombo__image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.combo_image1{
+    width: 30.3%;
+    height: 450px;
+    background-image: url("../../Assets/totebagcombo1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.combo_image2{
+    width: 30.3%;
+    height: 450px;
+    background-image: url("../../Assets/totebagcombo2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.combo_image3{
+    width: 30.3%;
+    height: 450px;
+    background-image: url("../../Assets/totebagcombo3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#btn{
+    background: rgba(255,255,255);
+    color: var(--color-primary);
+    padding: 10px;
+    margin-top: 380px;
+    margin-left: 20px;
+    font-weight: bolder;
+    border: none;
+}
+
+#btn:hover{
+    opacity: 0.8;
+    border: none;
+
+}
+.popular-combo__carousel{
+    margin-top: 3rem;
+}

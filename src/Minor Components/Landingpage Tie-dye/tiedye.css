@@ -27,9 +27,9 @@ section#tiedye{
 }
 .tiedye__image img{
     height: 500px;
-    width: 100%;
-    position: absolute;
-    left: -22rem;
+    width: 90%;
+    /* position: absolute; */
+    /* left: -20rem; */
     object-fit: contain;
 }
 
@@ -40,20 +40,51 @@ section#tiedye{
     
 }
 
-.tiedye__products a{
+.tiedye__products .tiedye__product{
     color: var(--color-primary);
     /* cursor: pointer; */
 }
+
+a{
+    cursor: pointer;
+}
 #button2{
     position: absolute;
-    left: 10rem;
-    bottom: -14rem;
+    left: 14rem;
+    bottom: -37rem;
+    background: transparent;
+    border: 2px solid white;
+    font-weight: bolder;
+    color: var(--color-white);
+}
+#button2:hover{
+    border: 3px solid white;
 }
 
 .tiedye__product{
     border: 1px solid black;
-   
-    
+}
+
+/* /* .tiedye__display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .tiedye__anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */ 
+
+h3{
+    font-weight: lighter;
+    color: var(--color-primary);
+
+}
+
+#button3{
+   padding: 10px;
 }
 
 .tiedye__products img{
@@ -61,4 +92,5 @@ section#tiedye{
     padding: 30px;
     height: 175px;
     object-fit: cover;
+    cursor: pointer;
 }
