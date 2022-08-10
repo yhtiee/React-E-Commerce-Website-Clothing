@@ -1,0 +1,129 @@
+#footer{
+    margin-top: 7rem;
+    background: var(--color-primary);
+}
+
+.footer_container{
+    height: 300px;
+}
+
+.footer_top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer_list1 a{
+    color: white;
+}
+
+.footer_list1 a:hover{
+    color: var(--color-secondary);
+}
+
+.footer_list1{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.footer_list2 a{
+    color: white;
+}
+
+.footer_list2 a:hover{
+    color: var(--color-secondary);
+}
+
+.footer_list2{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer_list3 a{
+    color: white;
+}
+
+.footer_list3 a:hover{
+    color: var(--color-secondary);
+}
+
+.footer_list3{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.footer_socials{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer_socials a{
+    color: white;
+    font-size: xx-large;
+}
+
+.footer_socials a:hover{
+    color: var(--color-secondary);
+}
+
+.footer_bottom{
+    margin-top: 2rem;
+}
+
+.footer_general{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15rem;
+    
+}
+
+.footer_list4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer_list5{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.footer_list4 p{
+    color: grey;
+}
+
+
+.footer_list4 .list_anchor1:hover{
+    color: white;
+}
+
+
+.footer_list5 p{
+    color: grey;
+}
+
+
+.footer_list5 p:hover{
+    color: white;
+}
+
+

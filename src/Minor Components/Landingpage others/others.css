@@ -1,0 +1,53 @@
+#others{
+    margin-top: 3rem;
+}
+
+.others__image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+    margin-top: 1rem;
+}
+
+.other_image1{
+    background: whitesmoke;
+    width: 22.3rem;
+    height: 450px;
+    background-image: url("../../Assets/kidspicture1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.other_image2{
+    width: 22.3rem;
+    height: 450px;
+    background: whitesmoke;
+    background-image: url("../../Assets/couples1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.other_image3{
+    width: 22.3rem;
+    height: 450px;
+    background-image: url("../../Assets/hoddies4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.other_wraper{
+    display: flex;
+    flex-direction: column;
+}
+
+.other_wraper p{
+    font-weight: bolder;
+    font-size: larger;
+    color: var(--color-primary);
+    margin-top: 1rem;
+}
+
+
+
+

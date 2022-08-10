@@ -1,0 +1,88 @@
+#learn{
+    margin-top: 5rem;
+    background: whitesmoke;
+}
+
+#buttons{
+    margin-top: 1rem;
+}
+
+.learn_container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learn_displayimages{
+    padding: 50px;
+    display: flex;
+    gap: 1rem;
+}
+
+.learn1{
+    height: 15rem;
+    width: 15rem;
+    background-image: url('../../Assets/training1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -270rem;
+    right: 24rem;
+}
+
+.learn2{
+    height: 15rem;
+    width: 15rem;
+    background-image: url('../../Assets/training2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -287rem;
+    right: 16rem;
+   
+    
+}
+
+.learn3{
+    height: 15rem;
+    width: 15rem;
+    background-image: url('../../Assets/training3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -270rem;
+    right: 7rem;
+}
+.learn_intro{
+    width: 50%;
+}
+
+.bg_design1{
+    width: 40rem;
+    height: 5rem; 
+    background: rgb(201, 167, 96); 
+    position: absolute;
+    left: 0;
+    bottom:-290rem; 
+    height:0px;
+    border-top: 70px solid rgb(201, 167, 96);
+    border-right: 50px solid whitesmoke;
+}
+
+.bg_design2{
+    width: 40rem;
+    height: 5rem; 
+    background: rgb(201, 167, 96); 
+    position: absolute;
+    left: 0;
+    bottom:-262rem; 
+    height:0px;
+    border-bottom: 70px solid rgb(201, 167, 96);
+    border-right: 50px solid whitesmoke;
+}

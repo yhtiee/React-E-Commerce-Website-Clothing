@@ -1,0 +1,55 @@
+#hoodies{
+    margin-top: 3rem;
+}
+
+.hoodies__image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.hoodie_image1{
+    width: 30.3%;
+    height: 450px;
+    background-image: url("../../Assets/hoodies2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hoodie_image2{
+    width: 30.3%;
+    height: 450px;
+    background-image: url("../../Assets/hoddies3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hoodie_image3{
+    width: 30.3%;
+    height: 450px;
+    background-image: url("../../Assets/hoddies4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#btn{
+    background: rgba(255,255,255);
+    color: var(--color-primary);
+    padding: 10px;
+    margin-top: 380px;
+    margin-left: 20px;
+    font-weight: bolder;
+    border: none;
+}
+
+#btn:hover{
+    opacity: 0.8;
+    border: none;
+
+}
+.hoodie__carousel{
+    margin-top: 3rem;
+}
+
+

@@ -32,8 +32,7 @@ const Shirtcarousel = ({images}) => {
                                   <p>{item.price}</p>
                               </span> 
                             </a> 
-                      </button>
-                      
+                      </button>      
                 ))}
                 </Slider>
             </div>
