@@ -1,0 +1,153 @@
+#signup{
+    position: relative;
+    top: 5rem;
+}
+
+.signup_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px 100px 100px;
+}
+
+.signup_firstname{
+    margin-top: 2rem;
+}
+
+.sigup_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.signup_wrapper{
+    border: 1px solid var(--color-primary);
+    padding: 50px;
+}
+
+.signup_intro h2{
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.signup_intro h3{
+    text-align: center;
+}
+
+.signup_intro h2 span{
+    color: var(--color-secondary);
+    
+}
+
+.signup_firstname label{
+    font-size: larger;
+}
+
+.signup_lastname label{
+    font-size: larger;
+}
+
+.signup_othernames label{
+    font-size: larger;
+}
+
+.signup_phone label{
+    font-size: larger;
+}
+
+.signup_password label{
+    font-size: larger;
+}
+
+.signup_email label{
+    font-size: larger;
+}
+
+.input_firstname{
+    border: 1px solid var(--color-primary);
+    background: whitesmoke;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.input_lastname{
+    border: 1px solid var(--color-primary);
+    background: whitesmoke;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.input_othernames{
+    border: 1px solid var(--color-primary);
+    background: whitesmoke;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.input_phonenumber{
+    border: 1px solid var(--color-primary);
+    background: whitesmoke;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.input_email{
+    border: 1px solid var(--color-primary);
+    background: whitesmoke;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.input_password{
+    border: 1px solid var(--color-primary);
+    background: whitesmoke;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.signup_btn{
+    width: 100%;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 2rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.8rem 1.6rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.signup_btn:hover{
+    border: 1px solid var(--color-primary);
+    background: rgb(19, 37, 59, 0.8);
+    color: white;
+
+}
+
+.form_alternative{
+    margin-top: 2rem;
+    font-size: larger;
+}
+
+.form_alternative{
+    text-align: center;
+}
+
+.signin_link{
+    color: rgb(24, 236, 218);
+    margin-left: 0.5rem;
+}

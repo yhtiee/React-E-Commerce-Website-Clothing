@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import {NavLink, Link} from 'react-router-dom'
 import './navbar.css'
 import {BsCart3} from 'react-icons/bs'
 import {AiOutlineClose} from 'react-icons/ai'
 import {GiHamburgerMenu } from 'react-icons/gi'
+import AuthContext from '../../Context/AuthContext'
 
 
 const Navbar = () => {
@@ -11,22 +12,25 @@ const Navbar = () => {
     const openToggle = () =>{
         setNavbarOpen(prev => !prev)
     }
-  return (
+    let user = useContext(AuthContext)
+    return (
     <nav>
         <div className='container nav__container'>
-            <a href="/home" className='nav__logo'>
+            <Link to="/home" className='nav__logo'>
                 <h3> sFh </h3>
-            </a>
+            </Link>
 
             <ul className={`nav__menu ${navbaropen? "show__menu": ""}`}>
-                <li> <a href="/products"> PRODUCTS </a></li>
-                <li> <a href="/about"> ABOUT US</a></li>
-                <li> <a href="/contact"> CONTACT US</a></li>
-                <li> <a href="/cart" id='cart' className='cart__nav'> <BsCart3/> </a></li>
-                <li> <a href="/signin" className="btn btn-primary" id='nav__btn'> SIGN IN </a></li>
+                <li><Link to="/products">   PRODUCTS  </Link></li>
+                <li> <Link to="/about"> ABOUT US</Link></li>
+                <li> <Link to="/contact"> CONTACT US</Link></li>
+                <li> <Link to="/cart" id='cart' className='cart__nav'> <BsCart3/> </Link></li>
+                <li> <Link to="/signin" className="btn btn-primary" id='nav__btn'> SIGN IN </Link></li>
+                <li> <Link to="/profile" id='profile' className="user_profile">{user}</Link></li>
+
             </ul>
             <ul className='cart__link'>
-                <li> <a href="/cart"  id='cart' > <BsCart3/> </a></li>
+                <li> <Link to="/cart"  id='cart' > <BsCart3/> </Link></li>
             </ul>
 
             <button onClick={openToggle}> {navbaropen? <AiOutlineClose id='close-menu-btn'/>: <GiHamburgerMenu id='open-menu-btn' /> }</button>
