@@ -1,8 +1,11 @@
 import React from 'react'
+import { useContext } from 'react'
 import {NavLink, Link} from 'react-router-dom'
+import AuthContext from '../../Context/authContext'
 import "./signup.css"
 
 const Signup = () => {
+    let {signUpUser} = useContext(AuthContext)
   return (
     <section id="signup">
         <div className="container signup_container">
@@ -12,26 +15,22 @@ const Signup = () => {
                     <h3>Please Signup to Start Shopping</h3>
                 </div>
                 <div className="signup_main">
-                    <form action="" className='sigup_form'>
+                    <form onSubmit={signUpUser} className='sigup_form'>
                         <div className="signup_firstname">
                             <label htmlFor="">First Name:</label>
-                            <input type="text" className='input_firstname' name='first_name'/>
+                            <input type="text" className='input_firstname' name='first_name' required minlength="3"/>
                         </div>
                         <div className="signup_lastname">
                             <label htmlFor="">Last Name:</label>
-                            <input type="text" className='input_lastname' name='last_name'/>
+                            <input type="text" className='input_lastname' name='last_name' required minlength="3"/>
                         </div>
                         <div className="signup_othernames">
-                            <label htmlFor="">Other Names:</label>
-                            <input type="text" className='input_othernames' name='other_name'/>
-                        </div>
-                        <div className="signup_phone">
-                            <label htmlFor="">Phone Number:</label>
-                            <input type="text" className='input_phonenumber' name='phone_number'/>
+                            <label htmlFor="">Username:</label>
+                            <input type="text" className='input_othernames' name='username' required minlength="3"/>
                         </div>
                         <div className="signup_email">
                             <label htmlFor="">Email:</label>
-                            <input type="email" className='input_email' name='email'/>
+                            <input type="email" className='input_email' name='email' required minlength="5"/>
                         </div>
                         <div className="signup_password">
                             <label htmlFor="">Password:</label>

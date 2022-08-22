@@ -1,8 +1,14 @@
 import React from 'react'
 import './signin.css'
-import {NavLink, Link} from 'react-router-dom'
+import jwt_decode from "jwt-decode";
+import {NavLink, Link, useNavigate} from 'react-router-dom'
+import { useContext } from 'react'
+import AuthContext from '../../Context/authContext'
+import { useState } from 'react'
+
 
 const Signin = () => {
+  let {loginUser} = useContext(AuthContext)
   return (
     <section id="signin">
         <div className="container signin_container">
@@ -12,10 +18,10 @@ const Signin = () => {
                 <h3>Please Signin to Continue Shopping</h3>
               </div>
               <div className="signin_main">
-                <form action="" className='sigin_form'>
+                <form onSubmit={loginUser} className='sigin_form'>
                   <div className="signin_email">
-                    <label htmlFor="">Email:</label>
-                    <input type="email" className='input_email' name='email'/>
+                    <label htmlFor="">Username:</label>
+                    <input type="text" className='input_email' name='username' required minlength="3"/>
                   </div>
                   <div className="signin_password">
                     <label htmlFor="">Password:</label>
@@ -25,7 +31,7 @@ const Signin = () => {
                     <p> Not yet Registered? Then Sign up<Link to="/signup" className='signup_link'>here</Link></p>
                   </div>
                   <div className="form_button">
-                    <button className='btn_signin'>
+                    <button className='btn_signin' type='submit'>
                       Sign in 
                     </button>
                   </div>
