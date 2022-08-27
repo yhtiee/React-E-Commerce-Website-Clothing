@@ -6,6 +6,12 @@ import "./signup.css"
 
 const Signup = () => {
     let {signUpUser} = useContext(AuthContext)
+    let {error} = useContext(AuthContext)
+    let renderError = (
+        <div className='error'>
+        {error}
+        </div>
+    )
   return (
     <section id="signup">
         <div className="container signup_container">
@@ -14,6 +20,7 @@ const Signup = () => {
                     <h2>JOIN THE <span>sFh</span> FAMILY</h2>
                     <h3>Please Signup to Start Shopping</h3>
                 </div>
+                {error? renderError : '' }
                 <div className="signup_main">
                     <form onSubmit={signUpUser} className='sigup_form'>
                         <div className="signup_firstname">

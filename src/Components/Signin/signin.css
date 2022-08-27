@@ -94,3 +94,10 @@
     color: rgb(24, 236, 218);
     margin-left: 0.5rem;
 }
+.error{
+    text-align: center;
+    font-size: larger;
+    color: red;
+    font-weight: bolder;
+    margin-top: 1rem;
+}

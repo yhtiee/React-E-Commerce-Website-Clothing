@@ -118,6 +118,14 @@
     font-size: larger;
 }
 
+.error{
+    text-align: center;
+    font-size: larger;
+    color: red;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
 .signup_btn{
     width: 100%;
     font-size: x-large;

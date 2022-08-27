@@ -1,56 +1,52 @@
+import TO1 from '../../Assets/totebag1.png'
+import TO2 from '../../Assets/totebag2.png'
+import TO3 from '../../Assets/totebag3.png'
+import TO4 from '../../Assets/croptop1.png'
+import TO5 from '../../Assets/croptop2.png'
+import TO6 from '../../Assets/croptop3.png'
 
-import H1 from '../../Assets/hoodiescarousel1.png'
-import H2 from '../../Assets/hoodiescarousel2.png'
-import H3 from '../../Assets/hoodiescarousel3.png'
-
-const hoodies__carousel = [{
-    id: 7,
-    href : "/products",
-    src:H1 ,
+const comboList = [{
+    id: 1,
+    src:TO1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 8,
-    href : "/products",
-    src: H2,
+    id: 2,
+    src: TO2,
     alt: "Image 2 ",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 9,
-    href : "/products",
-    src: H3,
+    id: 3,
+    src: TO3,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 10,
-    href : "/products",
-    src: H3,
+    id: 4,
+    src: TO4,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 11,
-    href : "/products",
-    src: H3,
+    id: 5,
+    src: TO5,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 12,
-    href : "/products",
-    src: H3,
+    id: 6,
+    src: TO6,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
-}]
+}
+];
 
-
-export default hoodies__carousel
+export default comboList

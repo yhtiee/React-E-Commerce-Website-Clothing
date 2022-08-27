@@ -1,4 +1,3 @@
-
 import SH1 from '../../Assets/shirt1.png'
 import SH2 from '../../Assets/shirt2.png'
 import SH4 from '../../Assets/shirt4.png'
@@ -6,7 +5,7 @@ import SH5 from '../../Assets/shirt5.png'
 import SH6 from '../../Assets/shirt6.png'
 import SH3 from '../../Assets/shirt3.png'
 
-const tiedye_images = [{
+const tiedyeShirtList = [{
     id: 13,
     href : "/products",
     src:SH1 ,
@@ -56,4 +55,4 @@ const tiedye_images = [{
 }
 ];
 
-export default tiedye_images
+export default tiedyeShirtList

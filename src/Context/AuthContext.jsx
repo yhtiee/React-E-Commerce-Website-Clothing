@@ -16,6 +16,7 @@ export const AuthProvider = ({children}) => {
     let [authToken, setAuthToken] = useState(() => localStorage.getItem("authTokens")? JSON.parse(localStorage.getItem("authTokens")): null)
     let [user, setUser] = useState(() => localStorage.getItem("authTokens")? jwt_decode(localStorage.getItem("authTokens")): null)
     let [loading, setLoading] = useState(true)
+    let [error, setError] = useState(null)
 
 
     
@@ -42,6 +43,11 @@ export const AuthProvider = ({children}) => {
                 )
             }
         }
+        else{
+            console.log("error")
+            setError("Invalid Registration Details User Already Exists Login")
+
+        }
         
     }
     async function loginUser(e){
@@ -59,19 +65,21 @@ export const AuthProvider = ({children}) => {
        
         if (response.ok){
             let data = await response.json()
-            // console.log(data, response)
-            if (response.status === 200){
+            if(response.status === 200){
                 setAuthToken(data)
                 setUser(jwt_decode(data.access))
                 localStorage.setItem("authTokens", JSON.stringify(data))
                 // localStorage.setItem("user", JSON.stringify(jwt_decode(data.access)))
                 navigate("*")
-
-            }else{
-                alert("Something Went Wrong") 
             }
         }
+        else{
+            console.log("error")
+            setError("Invalid Username or Password")
+
+        }
     }
+
 
     let logoutUser = () => {
         setAuthToken(null)
@@ -124,6 +132,7 @@ export const AuthProvider = ({children}) => {
         loginUser: loginUser,
         logoutUser : logoutUser,
         signUpUser : signUpUser,
+        error : error
         
       }
 

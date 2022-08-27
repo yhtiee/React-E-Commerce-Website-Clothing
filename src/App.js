@@ -9,6 +9,9 @@ import Signuppage from './Pages/Signuppage';
 import Cartpage from './Pages/Cartpage';
 import AuthContext, { AuthProvider } from "./Context/authContext";
 import { useContext } from "react";
+import Productspage from "./Pages/Productspage";
+import { ProductProvider } from "./Context/productContext";
+import Selection from "./Pages/Selection";
 
 
 const App = () => {
@@ -18,14 +21,18 @@ const App = () => {
     <div className='app'>
           <Router>
             <AuthProvider>
-              <Navbar/>
-                <Routes>  
-                  <Route path='*' element={user? <Navigate to="/signin"/> : <HomePage/>}/>
-                  <Route path='/cart' element={<Cartpage/>}/>
-                  <Route path='/signin' element={<Signinpage/>}/>
-                  <Route path='/signup' element={<Signuppage/>}/>     
-                </Routes>
-              <Footer/>  
+              <ProductProvider>
+                <Navbar/>
+                  <Routes>  
+                    <Route path='*' element={user? <Navigate to="/signin"/> : <HomePage/>}/>
+                    <Route path='/cart' element={<Cartpage/>}/>
+                    <Route path='/signin' element={<Signinpage/>}/>
+                    <Route path='/signup' element={<Signuppage/>}/> 
+                    <Route path='/products' element={<Productspage/>}/>
+                    <Route path='/product_selection' element={<Selection/>}/>  
+                  </Routes>
+                <Footer/> 
+              </ProductProvider> 
             </AuthProvider>
           </Router>
         </div>

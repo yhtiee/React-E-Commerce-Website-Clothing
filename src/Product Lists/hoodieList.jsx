@@ -1,59 +1,54 @@
+import H1 from '../../Assets/hoodiescarousel1.png'
+import H2 from '../../Assets/hoodiescarousel2.png'
+import H3 from '../../Assets/hoodiescarousel3.png'
 
-import SH1 from '../../Assets/shirt1.png'
-import SH2 from '../../Assets/shirt2.png'
-import SH4 from '../../Assets/shirt4.png'
-import SH5 from '../../Assets/shirt5.png'
-import SH6 from '../../Assets/shirt6.png'
-import SH3 from '../../Assets/shirt3.png'
-
-const tiedye_images = [{
-    id: 13,
+const hoodiesList= [{
+    id: 7,
     href : "/products",
-    src:SH1 ,
+    src:H1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 14,
+    id: 8,
     href : "/products",
-    src: SH2,
+    src: H2,
     alt: "Image 2 ",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 15,
+    id: 9,
     href : "/products",
-    src: SH3,
+    src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 16,
+    id: 10,
     href : "/products",
-    src: SH4,
+    src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 17,
+    id: 11,
     href : "/products",
-    src: SH5,
+    src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
 },
 {
-    id: 18,
+    id: 12,
     href : "/products",
-    src: SH6,
+    src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
-}
-];
+}]
 
-export default tiedye_images
+export default hoodiesList

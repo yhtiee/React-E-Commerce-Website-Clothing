@@ -9,6 +9,13 @@ import { useState } from 'react'
 
 const Signin = () => {
   let {loginUser} = useContext(AuthContext)
+  let {error} = useContext(AuthContext)
+  let renderError = (
+    <div className='error'>
+      {error}
+    </div>
+  )
+
   return (
     <section id="signin">
         <div className="container signin_container">
@@ -17,6 +24,7 @@ const Signin = () => {
                 <h2>WELCOME BACK TO <span>sFh</span></h2>
                 <h3>Please Signin to Continue Shopping</h3>
               </div>
+              {error? renderError : '' }
               <div className="signin_main">
                 <form onSubmit={loginUser} className='sigin_form'>
                   <div className="signin_email">

@@ -50,7 +50,7 @@ const Totebag = ({combo}) => {
                 <Slider {...settings} className="slide">
                   {combo.map((item) => (
                       <button key={item.id} className='carousel__image'> 
-                            <a href="/products">
+                            <a href="/product_selection">
                               <img src={item.src}  alt={item.alt} />
                               <span> 
                                   <p>{item.description}</p>
