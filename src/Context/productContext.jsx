@@ -36,24 +36,21 @@ export const ProductProvider = ({children}) => {
     let product = JSON.parse(localStorage.getItem("product"))
     let src = product.src
     let price = product.price
+    let alt = product.alt
+    let description = product.description
+    
     
 
     let productContextData = {
         addProduct : addProduct,
         src : src,
-        price : price
+        price : price,
+        alt : alt,
+        description : description
     }
 
 
-
-
-
-
-
-
-
-
-
+    
     return (
         <ProductContext.Provider value = {productContextData}>
             {children}

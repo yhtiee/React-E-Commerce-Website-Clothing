@@ -36,7 +36,7 @@ const Signin = () => {
                     <input type="password" name='password' className='input_password' required minLength="8"/>
                   </div>
                   <div className="form_alternative">
-                    <p> Not yet Registered? Then Sign up<Link to="/signup" className='signup_link'>here</Link></p>
+                    <p> Not yet Registered? Then Sign up<a href="/signup" className='signup_link'>here</a></p>
                   </div>
                   <div className="form_button">
                     <button className='btn_signin' type='submit'>

@@ -53,6 +53,11 @@
     margin-bottom: 12rem;
 }
 
+/* .select_product_size{
+    display: flex;
+    flex-direction: column;
+} */
+
 .product_img_background{
     background: whitesmoke;
     padding: 1rem;

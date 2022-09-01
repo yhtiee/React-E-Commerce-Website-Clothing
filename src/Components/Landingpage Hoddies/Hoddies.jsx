@@ -3,8 +3,13 @@ import './hoddies.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
+import { useContext } from 'react';
+import ProductContext from '../../Context/productContext';
 
 const Hoddies = ({hoodies__carousel}) => {
+
+    let {addProduct} = useContext(ProductContext)
+
     const settings = {
         dots: true,
         className: "center",
@@ -43,8 +48,8 @@ const Hoddies = ({hoodies__carousel}) => {
             <div>
             <Slider {...settings} className="slide">
               {hoodies__carousel.map((item) => (
-                  <button key={item.id} className='carousel__image'> 
-                        <a href="/products">
+                  <button key={item.id} className='carousel__image' onClick={event => addProduct(event, item.id, item.src, item.alt, item.description, item.price)}> 
+                        <a href="/product_selection">
                           <img src={item.src}  alt={item.alt} />
                           <span> 
                               <p>{item.description}</p>

@@ -10,6 +10,12 @@ import SH4 from '../Assets/shirt4.png'
 import SH5 from '../Assets/shirt5.png'
 import SH6 from '../Assets/shirt6.png'
 import SH3 from '../Assets/shirt3.png'
+import SC1 from '../Assets/shirtcarousel1.png'
+import SC2 from '../Assets/shirtcarousel2.png'
+import SC3 from '../Assets/shirtcarousel3.png'
+import SC4 from '../Assets/shirtcarousel4.png'
+import SC5 from '../Assets/shirtcarousel5.png'
+import SC6 from '../Assets/shirtcarousel6.png'
 
 // TOTE BAG, CROPTOP, BUCKETHAT
 import TO1 from '../Assets/totebag1.png'
@@ -154,6 +160,48 @@ const generalLists = [{
     id: 18,
     href : "/products",
     src: SH6,
+    alt: "Image 3",
+    description : "Multi-Color Design",
+    price : "₦4000"
+},
+{
+    id: 19,
+    src:SC1 ,
+    alt: "Image 1",
+    description : "Multi-Color Design",
+    price : "₦4000"
+},
+{
+    id: 20,
+    src: SC2,
+    alt: "Image 2 ",
+    description : "Multi-Color Design",
+    price : "₦4000"
+},
+{
+    id: 21,
+    src: SC3,
+    alt: "Image 3",
+    description : "Multi-Color Design",
+    price : "₦4000"
+},
+{
+    id: 22,
+    src: SC4,
+    alt: "Image 3",
+    description : "Multi-Color Design",
+    price : "₦4000"
+},
+{
+    id: 23,
+    src: SC5,
+    alt: "Image 3",
+    description : "Multi-Color Design",
+    price : "₦4000"
+},
+{
+    id: 24,
+    src: SC6,
     alt: "Image 3",
     description : "Multi-Color Design",
     price : "₦4000"
