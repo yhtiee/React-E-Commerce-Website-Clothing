@@ -61,6 +61,14 @@ nav button{
     display: none;
 }
 
+.cartlength{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+
+
+
 @media screen and (max-width:1024px){
     .cart__link{
         display: inline-block;

@@ -31,42 +31,42 @@ const generalLists = [{
     src:TO1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 2,
     src: TO2,
     alt: "Image 2 ",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 3,
     src: TO3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 4,
     src: TO4,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 5,
     src: TO5,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 6,
     src: TO6,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 7,
@@ -74,7 +74,7 @@ const generalLists = [{
     src:H1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 8,
@@ -82,7 +82,7 @@ const generalLists = [{
     src: H2,
     alt: "Image 2 ",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 9,
@@ -90,7 +90,7 @@ const generalLists = [{
     src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 10,
@@ -98,7 +98,7 @@ const generalLists = [{
     src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 11,
@@ -106,7 +106,7 @@ const generalLists = [{
     src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 12,
@@ -114,7 +114,7 @@ const generalLists = [{
     src: H3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 13,
@@ -122,7 +122,7 @@ const generalLists = [{
     src:SH1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 14,
@@ -130,7 +130,7 @@ const generalLists = [{
     src: SH2,
     alt: "Image 2 ",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 15,
@@ -138,7 +138,7 @@ const generalLists = [{
     src: SH3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 16,
@@ -146,7 +146,7 @@ const generalLists = [{
     src: SH4,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 17,
@@ -154,7 +154,7 @@ const generalLists = [{
     src: SH5,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 18,
@@ -162,49 +162,49 @@ const generalLists = [{
     src: SH6,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 19,
     src:SC1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 20,
     src: SC2,
     alt: "Image 2 ",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 21,
     src: SC3,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 22,
     src: SC4,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 23,
     src: SC5,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 },
 {
     id: 24,
     src: SC6,
     alt: "Image 3",
     description : "Multi-Color Design",
-    price : "₦4000"
+    price : 4000
 }
 
 ]

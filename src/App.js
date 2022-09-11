@@ -12,6 +12,7 @@ import { useContext } from "react";
 import Productspage from "./Pages/Productspage";
 import { ProductProvider } from "./Context/productContext";
 import Selection from "./Pages/Selection";
+import { CartProvider } from "./Context/cartContext";
 
 
 const App = () => {
@@ -22,16 +23,18 @@ const App = () => {
           <Router>
             <AuthProvider>
               <ProductProvider>
-                <Navbar/>
-                  <Routes>  
-                    <Route path='*' element={user? <Navigate to="/signin"/> : <HomePage/>}/>
-                    <Route path='/cart' element={<Cartpage/>}/>
-                    <Route path='/signin' element={<Signinpage/>}/>
-                    <Route path='/signup' element={<Signuppage/>}/> 
-                    <Route path='/products' element={<Productspage/>}/>
-                    <Route path='/product_selection' element={<Selection/>}/>  
-                  </Routes>
-                <Footer/> 
+                <CartProvider>
+                  <Navbar/>
+                    <Routes>  
+                      <Route path='*' element={user? <Navigate to="/signin"/> : <HomePage/>}/>
+                      <Route path='/cart' element={<Cartpage/>}/>
+                      <Route path='/signin' element={<Signinpage/>}/>
+                      <Route path='/signup' element={<Signuppage/>}/> 
+                      <Route path='/products' element={<Productspage/>}/>
+                      <Route path='/product_selection' element={<Selection/>}/>  
+                    </Routes>
+                  <Footer/>
+                </CartProvider> 
               </ProductProvider> 
             </AuthProvider>
           </Router>

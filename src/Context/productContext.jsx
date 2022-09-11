@@ -1,5 +1,5 @@
 import React, { createContext} from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ProductContext = createContext()
 
@@ -7,11 +7,7 @@ export default ProductContext
 
 export const ProductProvider = ({children}) => {
 
-    // let [src, setSrc] = useState(null)
-    // let [price, setPrice] = useState(null)
-
-
-   
+  
     const addProduct = (event,id, src, alt, description, price) => {
         console.log("submitted")
         console.log(id)
@@ -30,23 +26,14 @@ export const ProductProvider = ({children}) => {
             price : price
         }
         localStorage.setItem("product", JSON.stringify(product))
+        
     }
-
-    
-    let product = JSON.parse(localStorage.getItem("product"))
-    let src = product.src
-    let price = product.price
-    let alt = product.alt
-    let description = product.description
     
     
-
     let productContextData = {
+        
         addProduct : addProduct,
-        src : src,
-        price : price,
-        alt : alt,
-        description : description
+    
     }
 
 
