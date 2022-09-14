@@ -81,6 +81,7 @@ export const CartProvider = ({children}) => {
         let val = priceTotal - price
         setTotal(val)
         localStorage.setItem("totalPrice", JSON.stringify(val))
+        window.location.reload()
         pageReload()
         
 
@@ -198,10 +199,74 @@ export const CartProvider = ({children}) => {
         
     }
 
+    let reduce = (event, size, id, quantity, price, description, src , alt) => {
+    
+        let cartCopy = [...cart]
+
+        let item = {
+            id : id,
+            src : src,
+            alt : alt,
+            description : description,
+            price : price,
+            size : size,
+            quantity : 1
+        }
+
+        let existingItem = cartCopy.find(item => item.size === size && item.id === id )
+        if (existingItem){
+            existingItem.quantity = quantity -1
+            setQuantity(existingItem.quantity)
+            let val = JSON.parse(localStorage.getItem("Price"))
+            existingItem.price = price -= val
+            
+        }
+
+        if (existingItem.quantity === 0){
+            console.log(item)
+
+            cartCopy = cartCopy.filter(item => item.quantity !== 0);
+        
+            //update state and local
+            setCart(cartCopy);
+            
+            let cartString = JSON.stringify(cartCopy)
+            localStorage.setItem('cart', cartString)
+            
+            window.location.reload()
+            // pageReload()
+        }
+
+        getPriceTotal()
+        
+        setCart(cartCopy)
+
+        localStorage.setItem("cart", JSON.stringify(cartCopy))
+
+        let cartTotal = JSON.parse(localStorage.getItem("cart"))
+
+        let prices = []
+        for (let item of cartTotal){
+            let mainPrice = item.price
+            prices.push(mainPrice)
+        }
+
+        const sum = prices.reduce((accumulator, value) => {
+            return accumulator + value;
+          }, 0)
+        
+        let finalSum = sum
+        console.log(finalSum)
+        setTotal(finalSum)
+        localStorage.setItem("totalPrice", JSON.stringify(finalSum))
+        
+    }
+
     useEffect(() => {
         accessCart()
         getCartLength() 
         getPriceTotal()
+        
         
     
     }, [])
@@ -221,7 +286,8 @@ export const CartProvider = ({children}) => {
         totalPriceFinal : totalPriceFinal,
         removeCart : removeCart,
         removeItem : removeItem,
-        increase : increase
+        increase : increase,
+        reduce: reduce
         
         
     }
