@@ -1,7 +1,7 @@
-import React, { createContext, useState, useEffect, Children  } from "react";
+import React from "react";
 import './App.css';
 import HomePage from './Pages/Homepage';
-import { BrowserRouter as Router, Routes, Route, Navigate, useSearchParams} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Signinpage from './Pages/Signinpage';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
@@ -38,7 +38,7 @@ const App = () => {
               </ProductProvider> 
             </AuthProvider>
           </Router>
-        </div>
+    </div>
     
     
   )

@@ -36,11 +36,6 @@ export const AuthProvider = ({children}) => {
         if (response.ok){
             if (response.status === 201){
                 navigate("/signin")
-
-            }else{
-                return (
-                    <Testimonials/>
-                )
             }
         }
         else{
@@ -52,7 +47,7 @@ export const AuthProvider = ({children}) => {
     }
     async function loginUser(e){
         e.preventDefault()
-        console.log("form submitted")
+        // console.log("form submitted")
         let response = await fetch ("http://127.0.0.1:8000/api/token/", {  
             method: "POST",
             headers: {

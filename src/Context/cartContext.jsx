@@ -11,12 +11,8 @@ export const CartProvider = ({children}) => {
     let [cart, setCart] = useState([])
     let [cartlength, setCartLength] = useState(0)
     let [totalPriceFinal, setTotal] = useState(0)
-    let [cartQuantity, setQuantity] = useState(1)
+    // let [cartQuantity, setQuantity] = useState(1)
     
-    
-    
-
-
     let localCart = localStorage.getItem("cart")
 
     const addItem = (event, id, src, alt, description, price, size) => {
@@ -167,7 +163,7 @@ export const CartProvider = ({children}) => {
         let existingItem = cartCopy.find(item => item.size === size && item.id === id )
         if (existingItem){
             existingItem.quantity = quantity +1
-            setQuantity(existingItem.quantity)
+            // setQuantity(existingItem.quantity)
             let val = JSON.parse(localStorage.getItem("Price"))
             existingItem.price = val += price
             
@@ -216,7 +212,7 @@ export const CartProvider = ({children}) => {
         let existingItem = cartCopy.find(item => item.size === size && item.id === id )
         if (existingItem){
             existingItem.quantity = quantity -1
-            setQuantity(existingItem.quantity)
+            // setQuantity(existingItem.quantity)
             let val = JSON.parse(localStorage.getItem("Price"))
             existingItem.price = price -= val
             
