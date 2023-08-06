@@ -62,7 +62,6 @@ const Testimonials = () => {
   ];
 
   
-
   return (
     <section id="testimonials">
        <div className="container testimonials_container">

@@ -5,13 +5,15 @@ import TO4 from '../../Assets/croptop1.png'
 import TO5 from '../../Assets/croptop2.png'
 import TO6 from '../../Assets/croptop3.png'
 
-const comboList = [{
+const comboList = [
+{
     id: 1,
     src:TO1 ,
     alt: "Image 1",
     description : "Multi-Color Design",
     price : "₦4000"
 },
+
 {
     id: 2,
     src: TO2,
@@ -19,6 +21,7 @@ const comboList = [{
     description : "Multi-Color Design",
     price : "₦4000"
 },
+
 {
     id: 3,
     src: TO3,
